@@ -1,7 +1,8 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
+import os
 
-BOT_TOKEN = "8831139468:AAEIgFkpbXsYCZ_qF14xLZeDJaK4bLDee9c"
+BOT_TOKEN = os.environ["8831139468:AAEIgFkpbXsYCZ_qF14xLZeDJaK4bLDee9c"]
 ADMIN_ID = 7796466520
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
